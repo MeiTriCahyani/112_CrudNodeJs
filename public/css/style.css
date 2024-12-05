@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradasi dari ungu ke biru */
+    color: white !important;
+}
+
+.navbar .nav-link {
+    color: white !important; /* Warna teks navbar menjadi putih */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Animasi transisi */
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efek hover transparan */
+    border-radius: 5px;
+}
+
+.navbar-brand img {
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3)); /* Tambahkan efek bayangan pada logo */
+}
+
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0559b3;
+}
+
+/* Todo List Styling */
+#todoList {
+    margin-top: 20px;
+}
+
+#todoList .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Form Styling */
+form {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Sama seperti navbar */
+    color: #fff; /* Teks putih */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Bayangan lembut di atas footer */
+}
+
+/* Hover Effect for Footer Links */
+footer a {
+    color: #ffdd57; /* Warna kuning lembut untuk link */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Transisi halus pada hover */
+}
+
+footer a:hover {
+    color: #ffe600; /* Warna lebih cerah saat hover */
+}
+
+
+/* LOGIN FORM */
+/* Wrapper untuk form login agar berada di tengah */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Warna latar belakang lembut */
+}
+
+/* Card yang membungkus form */
+.login-card {
+    background-color: #ffffff; /* Warna putih */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Logo di bagian atas */
+.login-card img {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+/* Judul dan deskripsi */
+.login-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.login-card p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* Input field */
+.login-card .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Tombol login */
+.login-card .btn {
+    background-color: #007bff; /* Warna biru khas bootstrap */
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.login-card .btn:hover {
+    background-color: #0056b3; /* Warna biru yang lebih gelap */
+}
+
+/* Link tambahan */
+.login-card a {
+    color: #007bff;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}
+
+/* Efek hover pada card */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi transformasi dan shadow */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Skala card menjadi 1.05x lebih besar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Menambahkan shadow saat hover */
+}
+
+/* Styling for modal at top-right */
+.modal.right-top .modal-dialog {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    margin: 0;
+    max-width: 300px;
+}
+
+.modal.right-top .modal-content {
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header, .modal-body {
+    padding: 0.5rem 1rem;
+}
+
+.modal-footer {
+    display: none;
+}
